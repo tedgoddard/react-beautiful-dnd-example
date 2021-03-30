@@ -15,9 +15,10 @@
  </style>
 </head>
 <body>
+  <div id="button1" aria-role="button" aria-label="aria label on button" >button contents</div>
   <p aria-label="aria label text" >replaced by label</p>
   <p id="math1" >plain text</p>
-<div class="sl-visually-hidden" id="sl-dnd-aria-announce" aria-live="assertive" aria-atomic="true"></div></body>
+  <div class="sl-visually-hidden" id="sl-dnd-aria-announce" aria-live="assertive" aria-atomic="true"></div></body>
   <script>
     const mathmlFraction = '<math xmlns="http://www.w3.org/1998/Math/MathML" data-semantic-complexity="6.800000000000001"><mfrac data-semantic-type="fraction" data-semantic-role="division" data-semantic-id="3" data-semantic-children="0,2" data-semantic-complexity="6.800000000000001"><mi mathvariant="italic" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-id="0" data-semantic-parent="3" data-semantic-complexity="1">&#x3C0;</mi><msqrt data-semantic-type="sqrt" data-semantic-role="unknown" data-semantic-id="2" data-semantic-children="1" data-semantic-parent="3" data-semantic-complexity="3"><mn data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-id="1" data-semantic-parent="2" data-semantic-complexity="1">2</mn></msqrt></mfrac></math>'
     document.getElementById("math1").setAttribute("data-mathml", mathmlFraction)
